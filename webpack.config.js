@@ -1,11 +1,14 @@
 var path = require('path');
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry: './src/index.ts',
     output: {
         path: path.join(__dirname, 'output'),
-        filename: 'index.js'
+        filename: 'index.js',
+        libraryTarget: 'umd',
+        library: 'compressJs',
+        globalObject: 'this'
     },
     resolve: {
         extensions: [".ts", ".tsx", ".js"]

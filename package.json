@@ -2,11 +2,7 @@
   "name": "compress-json",
   "version": "1.0.0",
   "description": "",
-  "main": "babel.config.js",
-  "directories": {
-    "test": "jest",
-    "build": "webpack"
-  },
+  "main": "output/index.js",
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^25.2.3",
@@ -19,7 +15,8 @@
     "webpack-cli": "^3.3.11"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "webpack"
   },
   "author": "liuyuekeng",
   "license": "ISC"
